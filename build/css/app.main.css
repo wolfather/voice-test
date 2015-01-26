@@ -1,0 +1,7 @@
+body {
+  font-family: sans-serif;
+  background: #eee; }
+
+#textSpoken {
+  font: 500 1em/1em Helvetica, Tahoma, sans-serif;
+  color: #333; }

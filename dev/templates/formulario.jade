@@ -1,0 +1,14 @@
+form(name="meuFormulario", method="post")
+	fieldset
+		legend Preencha os campos com seus dados para enviar a sua mensagem
+
+		label
+			input(type="text", name="user.name", maxlength="50", placeholder="Insira o seu nome")
+
+		label
+			input(type="email", name="user.email", maxlength="100", placeholder="Insira o seu e-mail", required)
+
+		label
+			textarea(cols="10", rows="10", name="user.message")
+
+		button(class="btn btn-primary") Enviar

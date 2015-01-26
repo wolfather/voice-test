@@ -1,0 +1,18 @@
+extends template.jade
+	
+block conteudo
+	h1 TESTE
+	div(ng-app='upload')
+		div(ng-controller='uploadCTRL')
+			
+			form(enctype="multipart/form-data", method="post", ng-submit='changes()')
+				
+				input(type = 'file'
+					uploadfile
+					ng-model = 'uploadfile'
+					accept = 'image/png,image/jpg,image/jpeg')
+
+				input(type='text'
+					ng-model='nome'
+					ng-change='changeme()')
+				button UPLOAD
