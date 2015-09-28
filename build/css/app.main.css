@@ -5,3 +5,12 @@ body {
 #textSpoken {
   font: 500 1em/1em Helvetica, Tahoma, sans-serif;
   color: #333; }
+
+#editor {
+  display: none; }
+
+.wrapper .visible {
+  display: block !important; }
+
+.product.active {
+  background: purple; }

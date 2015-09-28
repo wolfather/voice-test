@@ -1,19 +1,66 @@
 doctype
-html(lang='en')
+html(lang='en-GB')
 	head
 		meta(charset="utf-8")
 		title Voice test
 
 		link(rel='stylesheet', href='../css/app.main.css')
-	body
+	body(itemscope)
 
-		div
+		div(class='wrapper')
 			h1 Voice test
 			
 			textarea(id='textSpoken', cols="60", rows="10")
 
 			
 			button(id="btnCaptureVoice") capture my voice
+
+
+			div.searchContainer
+				form(method="get", name='searchForm')
+					label#search
+						input(type='text'
+							x-webkit-speech
+							id='searchterm'
+							placeholder='Type your search')
+					
+					button GO
+
+			
+
+			div(id="editor", class="editor")
+				h2 This is editor
 		
 		
-		script(src="../script/app.main.js")
+		
+
+
+
+			section(id="product"
+					class="product")
+				h2 Produtos
+
+
+
+
+
+
+
+
+		script(src="../../dev/script/app.main.js")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
